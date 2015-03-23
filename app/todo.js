@@ -1,4 +1,4 @@
 angular.module('todo', [])
   .controller('TodoController', ['$scope', function($scope) {
-    $scope.list = [];
+    $scope.list = ['test', 'execute', 'refactor'];
   }]);

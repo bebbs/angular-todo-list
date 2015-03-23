@@ -11,4 +11,8 @@ describe('TodoController', function() {
   it('Defines a list object', function() {
     expect(scope.list).toBeDefined();
   });
+
+  it('Returns items in the correct order', function() {
+    expect(scope.list).toEqual(['test', 'execute', 'refactor']);
+  });
 });
