@@ -35,7 +35,7 @@ describe('TodoController', function() {
 
     it('Removes a specific item', function() {
       var lastItemIndex = scope.list.length - 1;
-      expect(scope.list[lastItemIndex]).toEqual('repeat');
+      expect(scope.list[lastItemIndex]).toEqual('refactor');
     });
   });
 });
