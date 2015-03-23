@@ -1,0 +1,15 @@
+{
+  "name": "toDo2",
+  "version": "0.0.0",
+  "authors": [
+    "Josh Bebbington"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
