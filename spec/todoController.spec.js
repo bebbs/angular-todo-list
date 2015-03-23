@@ -26,4 +26,16 @@ describe('TodoController', function() {
       expect(scope.list[lastItemIndex]).toEqual('repeat');
     });
   });
+
+  describe('Removing an item', function() {
+    beforeEach(function() {
+      scope.add('repeat');
+      scope.remove('repeat');
+    });
+
+    it('Removes a specific item', function() {
+      var lastItemIndex = scope.list.length - 1;
+      expect(scope.list[lastItemIndex]).toEqual('refactor');
+    });
+  });
 });
