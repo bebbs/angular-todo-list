@@ -5,8 +5,15 @@
   </head>
   <body ng-app='todo'>
     <section ng-controller='TodoController'>
+      <form ng-submit='add(item)' novalidate>
+        <input type='text' ng-model='item' id='new-task'>
+        <input type='submit' value='Add task' class='add-btn'></button>
+      </form>
       <ul ng-repeat='item in list'>
-        <li>{{ item }}</li>
+        <li>
+          <h3>{{ item }}</h3>
+          <a ng-click='remove(item)' class='item-delete'>Delete</a>
+        </li>
       </ul>
     </section>
 
