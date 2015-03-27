@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>TODO APP</title>
+    <link href='stylesheets/custom.css' type='text/css' rel='stylesheet'>
   </head>
   <body ng-app='todo'>
-    <section ng-controller='TodoController'>
+    <section ng-controller='TodoController' class='container'>
       <form ng-submit='add(item)' novalidate>
         <input type='text' ng-model='item' id='new-task'>
         <input type='submit' value='Add task' class='add-btn'></button>
